@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "JetBrains Mono", sans-serif;
+  min-height: 100vh;
+}
+
+.drag-and-drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  border: 3px dotted #b8b8b8;
+  border-radius: 15px;
+  background: #f3f3f3;
+
+  &.active {
+    border-color: cornflowerblue;
+    background: #dae2ff;
+  }
+}
+
+.images-list {
+  display: flex;
+  width: 500px;
+  margin: 10px 0 0 0;
+  .images-list-picture {
+    display: block;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: 0 10px 0 0;
+  }
+}
+
+.upload-btn {
+  font-size: 20px;
+  margin: 10px 0;
+}
