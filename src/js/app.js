@@ -37,6 +37,8 @@ dragAndDrop.addEventListener('drop', (e) => {
     if (imagesForUpload.length > 0) {
         uploadBtn.removeAttribute('disabled')
     }
+
+    dragAndDrop.classList.remove('active');
 })
 
 const uploadImages = () => {
