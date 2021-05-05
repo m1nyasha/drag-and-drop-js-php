@@ -39,6 +39,9 @@ foreach ($images as $image) {
     if (!move_uploaded_file($image["tmp_name"], "../uploads/" . $fileName)) {
         die('Error upload file');
     }
+
+    // Приостанавливаем скрипт, для нового уникального имени для следующего файла в очереди.
+    sleep(1);
 }
 
 echo json_encode(["status" => true]);
