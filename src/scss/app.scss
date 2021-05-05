@@ -28,6 +28,10 @@ body {
   }
 }
 
+.drag-and-drop-title {
+  pointer-events: none;
+}
+
 .images-list {
   display: flex;
   width: 500px;
